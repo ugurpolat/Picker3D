@@ -21,19 +21,7 @@ public class PickerMovement : MonoBehaviour
             transform.position = new Vector3(PlayerPrefs.GetFloat("PPX"), PlayerPrefs.GetFloat("PPY"), PlayerPrefs.GetFloat("PPZ"));
         }
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        GetInput();
-    }
     
-
     private void FixedUpdate()
     {
         if (pickerManager.pickerState == PickerManager.PickerState.Move)
